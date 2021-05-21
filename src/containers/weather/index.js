@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./style.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { Chart, Controls } from "../../components";
 import { getCityData } from "../../store/weather/operation";
+import "./style.scss";
 
 const WeatherContainer = () => {
   const dispatch = useDispatch();
