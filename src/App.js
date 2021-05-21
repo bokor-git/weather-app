@@ -1,7 +1,7 @@
-import "./App.css";
 import { Provider } from "react-redux";
 import { WeatherContainer } from "./containers";
-import store from "./store/store";
+import store from "./store";
+import "./App.css";
 
 function App() {
   return (
