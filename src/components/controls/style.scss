@@ -1,0 +1,63 @@
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  min-width: 500px;
+  margin: 0 auto;
+
+  &__input {
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 250px;
+    height: 45px;
+    font-size: 16px;
+    border: #82ca9d 2px solid;
+    color: rgb(102, 102, 102);
+    outline: none;
+    border-radius: 15px;
+    padding-left: 20px;
+    background-color: lemonchiffon;
+    &::placeholder {
+      font-weight: bold;
+      color: rgb(102, 102, 102);
+    }
+  }
+
+  &__submit {
+      $animationTime: 200ms;
+      box-sizing: border-box;
+      font-size: 14px;
+      line-height: 1.36;
+      width: 250px;
+      height: 45px;
+      color: white;
+      text-align: center;
+      border-radius: 15px;
+      background-color: #82ca9d;
+      border: none;
+      outline: none;
+      padding: 14px 55px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      transition: $animationTime background-color ease-in-out, $animationTime color ease-in-out, $animationTime box-shadow ease-in-out;
+      text-shadow: 0 0 1px rgba(#393f4d, .5);
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        border-color: #82ca9d;
+        color: #82ca9d;
+        box-shadow: 0 0 2px 2px #82ca9d;
+        text-shadow: 0 0 1px rgba(white, .5);
+      }
+  }
+}
+
+
+
+
+

@@ -9,8 +9,15 @@ const initialState = {
 
 const reducer = handleActions(
   {
-    [types.SET_CITY_DATA]: () => ({}),
-    [types.SET_ERROR]: () => ({}),
+    [types.SET_CITY_DATA]: (state, { payload: { temperature, city } }) => ({
+      ...state,
+      city,
+      temperature,
+    }),
+    [types.SET_ERROR]: (state, { payload: error }) => ({
+      ...state,
+      error,
+    }),
   },
   initialState
 );
